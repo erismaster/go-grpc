@@ -6,8 +6,7 @@ import (
 	"net"
 
 	"google.golang.org/grpc"
-	//"github.com/erismaster/go-grpc/chat"
-	"go-grpc/chat"
+	"github.com/erismaster/go-grpc/chat"
 )
 
 func main() {
