@@ -1,4 +1,4 @@
-module erismaster.com/go-grpc
+module github.com/erismaster/go-grpc
 
 go 1.14
 
