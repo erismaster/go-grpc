@@ -1,7 +1,6 @@
 package main
 
 import (
-	//"erismaster.com/go-grpc/chat"
 	"log"
 	"net"
 
@@ -19,7 +18,7 @@ func main() {
 
 	grpcServer := grpc.NewServer()
 
-	chat.RegisterChatServerServer(grpcServer, &s)
+	chat.RegisterChatServiceServer(grpcServer, &s)
 
 	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatalf("Failed to server gRPC server over port 9000: %v", err)
